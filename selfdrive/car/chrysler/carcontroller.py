@@ -50,7 +50,7 @@ class CarController:
 
     if CC.cruiseControl.cancel:
       can_sends.append(create_cruise_buttons(self.packer, CS.button_counter + 1, cancel=True))
-    elif CC.resume:
+    elif CC.cruiseControl.resume:
       can_sends.append(create_cruise_buttons(self.packer, CS.button_counter + 1, resume=True))
 
     # LKAS_HEARTBIT is forwarded by Panda so no need to send it here.
