@@ -17,7 +17,7 @@ class LateralPlanner:
     self.DH = DesireHelper()
 
     self.factor1 = CP.wheelbase - CP.centerToFront
-    self.factor2 = (2 * CP.centerToFront * CP.mass) / (CP.wheelbase * CP.tireStiffnessRear)
+    self.factor2 = (CP.centerToFront * CP.mass) / (CP.wheelbase * CP.tireStiffnessRear)
     self.last_cloudlog_t = 0
     self.solution_invalid_cnt = 0
 
